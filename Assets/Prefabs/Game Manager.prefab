@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1951646581883691770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1951646581883691772}
+  - component: {fileID: 1951646581883691771}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1951646581883691772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951646581883691770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1951646581883691771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951646581883691770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845c28ab66c36704196f6230a505c92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameList:
+  - John
+  - Melesa
+  - Kabir
+  playerCount: 0
+  playerAnim: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  playerLeaderBoard: {fileID: 0}
+  leaderBoardListItem: {fileID: 4638878620590460550, guid: 7084ce4aa8d227a4bbaa8231292e35eb,
+    type: 3}
+  winMessage: {fileID: 0}
+  instruction: {fileID: 0}
+  rewardText:
+  - {fileID: 5090957607509454414, guid: d88d3022680266643ba4bad50c670643, type: 3}
+  - {fileID: 8406240317175423578, guid: 088476b7eab82b543ac5dbc4e39201fd, type: 3}
+  rewardTextPos: {fileID: 0}
+  numberOfTotalPlayer: 2
+  gameStarted: 0
