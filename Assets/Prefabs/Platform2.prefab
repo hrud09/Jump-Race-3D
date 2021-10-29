@@ -160,7 +160,7 @@ RectTransform:
   m_GameObject: {fileID: 1232818841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 281771150}
   m_Father: {fileID: 1542831029}
@@ -459,7 +459,7 @@ MonoBehaviour:
   nextPlatformCenter: {x: 0, y: 0, z: 0}
   isTriggered: 0
   isBreakable: 0
-  isMovable: 1
+  isMovable: 0
 --- !u!1001 &6243417844078739136
 PrefabInstance:
   m_ObjectHideFlags: 0

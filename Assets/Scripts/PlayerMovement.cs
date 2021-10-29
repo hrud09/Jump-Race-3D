@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float force,speed;
+    public float force,speed,rotationSpeed;
     [SerializeField] Rigidbody rb;
     [SerializeField] Animator anim;
     [SerializeField] GameObject waterSurfaceSplash;
@@ -65,7 +65,8 @@ public class PlayerMovement : MonoBehaviour
             mouseDir = Input.mousePosition - initialPos;
             initialPos = Input.mousePosition;
             
-            transform.rotation = Quaternion.Euler(0, transform.localEulerAngles.y+Input.GetAxis("Mouse X")*2.5f, 0);          
+           transform.rotation = Quaternion.Euler(transform.rotation.x, transform.localEulerAngles.y+Input.GetAxis("Mouse X")*rotationSpeed*Time.deltaTime, transform.rotation.z);    
+           
         }
         else if(onGround)
         {
@@ -74,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Direction = nextPlatform - transform.position;
                 Vector3 direction = new Vector3(Direction.x, 0, Direction.z);
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), 1 * Time.deltaTime);
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), 2.5f * Time.deltaTime);
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -88,8 +89,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isMoving)
         {
-            // rb.AddForce(new Vector3(transform.forward.x, 0, transform.forward.z) * speed * Time.fixedDeltaTime);
-            rb.velocity = new Vector3(transform.forward.x * speed, rb.velocity.y, transform.forward.z * speed );
+            //rb.AddForce(new Vector3(transform.forward.x, 0, transform.forward.z) * speed * Time.fixedDeltaTime);
+             rb.velocity = new Vector3(transform.forward.x * speed, rb.velocity.y, transform.forward.z * speed );
+            //rb.velocity = transform.forward * speed * Time.fixedDeltaTime;
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -106,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (collision.collider.tag == "Water Platform")
         {
-            Jump(2.5f);
+            Jump(2.8f);
         }
         else if (collision.collider.tag == "Finish")
         {

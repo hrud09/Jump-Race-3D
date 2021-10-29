@@ -47,7 +47,7 @@ Material:
     - _BumpSpeed: 0.2
     - _Cull: 0
     - _Cull_: 2
-    - _Diffuse: 1
+    - _Diffuse: 0.26
     - _Direction: 180
     - _Distort: 1
     - _Distortion: 1
@@ -63,7 +63,7 @@ Material:
     - _Length: 4
     - _LightAbs: 0
     - _NormalOffset: 1
-    - _Opacity: 1
+    - _Opacity: 0.24
     - _PointLights: 0
     - _RHeight: 0.2
     - _RHeight_: 0.6
@@ -77,7 +77,7 @@ Material:
     - _Shadow: 0.6
     - _ShoreDistance: 0.5
     - _ShoreIntensity: 1
-    - _Specular: 73
+    - _Specular: 1
     - _Speed: 0.5
     - _Speed_: 1.5
     - _Steepness: 0.2
@@ -88,7 +88,7 @@ Material:
     - _Waves: 0
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 0.28346387, g: 0.8433843, b: 0.9245283, a: 1}
+    - _Color: {r: 0.43867922, g: 0.92812365, b: 1, a: 1}
     - _DeepColor: {r: 0, g: 0.20955881, b: 0.41911763, a: 1}
     - _Direction_: {r: -1, g: -0.00000008742278, b: -2.4, a: -0.00000020981467}
     - _FresColor: {r: 0.5586953, g: 0.75221485, b: 0.764151, a: 1}
